@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .calc-grid button{
+                height:60px;
+                width:60px;
+                border-radius: 30px;
+                border:none;
+                margin-right: 10px;
+            
+            }
+
+            .addition, .substraction, .multiplication, .division{
+                background-color: orange;
+                color:white;
+                font-size: 25px;
+            }
+
+            .one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .zero, .dot, .equal{
+                background-color: rgb(93, 92, 92);
+                color:white;
+                font-size: 25px;
+            }
+
+            .clear{
+                font-size: 15px;
+                background-color: rgb(93, 92, 92);
+                color:white;
+            }
+        </style>
+    </head>
+
+    <body style="margin-top: 100px;
+    background-color: black;">
+        <div class="calc-grid" style="
+            display:grid;
+            grid-template-rows: 70px 70px 70px 70px;">
+           
+           <div>
+                <button class="one"; onclick="
+                calculation+=1;
+                console.log(calculation);
+                ">1</button>
+                
+                <button class="two"; onclick="
+                    calculation+=2;
+                    console.log(calculation);
+                ">2</button>
+
+                <button class="three"; onclick="
+                    calculation+=3;
+                    console.log(calculation);
+                ">3</button>
+
+                <button class="addition"; onclick="
+                calculation += ' + ';
+                console.log(calculation);
+                ">+</button>
+            </div>
+           
+            <div>
+                <button class="four"; onclick="
+                calculation+=4;
+                console.log(calculation);
+                ">4</button>
+        
+                <button class="five"; onclick="
+                calculation+=5;
+                console.log(calculation);
+                ">5</button>
+        
+                <button class="six"; onclick="
+                calculation+=6;
+                console.log(calculation);
+                ">6</button>
+
+                <button class="substraction"; onclick="
+                calculation += ' - ';
+                console.log(calculation);
+                ">-</button>
+            </div>
+       
+            <div>
+                <button class="seven"; onclick="
+                calculation+=7;
+                console.log(calculation);
+                ">7</button>      
+                
+                <button class="eight"; onclick="
+                calculation+=8;
+                console.log(calculation);
+                ">8</button>
+        
+                <button class="nine"; onclick="
+                calculation+=9;
+                console.log(calculation);
+                ">9</button>
+            
+                <button class="multiplication"; onclick="
+                calculation += ' * ';
+                console.log(calculation);
+                ">*</button>    
+            </div>
+       
+            <div>
+                <button class="zero"; onclick="
+                calculation+=0;
+                console.log(calculation);
+                ">0</button>
+
+                <button class="dot"; onclick="
+                calculation+=' . ';
+                console.log(calculation);
+                ">.</button>
+                  
+                  <button class="equal"; onclick=";
+                  calculation=eval(calculation);
+                  console.log(calculation);
+                ">=</button>
+
+                <button class="division"; onclick="
+                calculation += ' / ';
+                console.log(calculation);
+                ">/</button>
+            </div>
+
+
+            <div>
+                <button class="clear"; onclick="
+                calculation = '  ';
+                console.log('0');
+                ">Clear</button>
+            </div>
+      
+        </div>
+        
+
+        <script>
+        let calculation = '';
+        </script>
+    </body>
+</html>
